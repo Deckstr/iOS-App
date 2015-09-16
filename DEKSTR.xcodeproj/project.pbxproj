@@ -13,6 +13,11 @@
 		FA84E89E1BA628DC0076B058 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA84E89D1BA628DC0076B058 /* Images.xcassets */; };
 		FA84E8A11BA628DC0076B058 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA84E89F1BA628DC0076B058 /* LaunchScreen.xib */; };
 		FA84E8AD1BA628DC0076B058 /* DEKSTRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84E8AC1BA628DC0076B058 /* DEKSTRTests.swift */; };
+		FA84E8B71BA62B0D0076B058 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84E8B61BA62B0D0076B058 /* UserTableViewCell.swift */; };
+		FA84E8BB1BA63BEC0076B058 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84E8BA1BA63BEC0076B058 /* User.swift */; };
+		FA84E8BD1BA642750076B058 /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84E8BC1BA642750076B058 /* UserTableViewController.swift */; };
+		FAF53AB61BA92B26004BF6E5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF53AB51BA92B26004BF6E5 /* SWRevealViewController.m */; };
+		FAF53AB81BA92D78004BF6E5 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53AB71BA92D78004BF6E5 /* MenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,13 @@
 		FA84E8A61BA628DC0076B058 /* DEKSTRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DEKSTRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA84E8AB1BA628DC0076B058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA84E8AC1BA628DC0076B058 /* DEKSTRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEKSTRTests.swift; sourceTree = "<group>"; };
+		FA84E8B61BA62B0D0076B058 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		FA84E8BA1BA63BEC0076B058 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA84E8BC1BA642750076B058 /* UserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserTableViewController.swift; path = DEKSTR.xcodeproj/../UserTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		FAF53AB31BA92B26004BF6E5 /* DEKSTR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DEKSTR-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAF53AB41BA92B26004BF6E5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../../Downloads/SWRevealViewController-master 3/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
+		FAF53AB51BA92B26004BF6E5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../../Downloads/SWRevealViewController-master 3/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
+		FAF53AB71BA92D78004BF6E5 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +89,14 @@
 		FA84E8931BA628DB0076B058 /* DEKSTR */ = {
 			isa = PBXGroup;
 			children = (
+				FAF53AB21BA92AFF004BF6E5 /* SWRevealViewController */,
 				FA84E8961BA628DC0076B058 /* AppDelegate.swift */,
+				FAF53AB71BA92D78004BF6E5 /* MenuController.swift */,
 				FA84E8981BA628DC0076B058 /* ViewController.swift */,
 				FA84E89A1BA628DC0076B058 /* Main.storyboard */,
+				FA84E8BA1BA63BEC0076B058 /* User.swift */,
+				FA84E8BC1BA642750076B058 /* UserTableViewController.swift */,
+				FA84E8B61BA62B0D0076B058 /* UserTableViewCell.swift */,
 				FA84E89D1BA628DC0076B058 /* Images.xcassets */,
 				FA84E89F1BA628DC0076B058 /* LaunchScreen.xib */,
 				FA84E8941BA628DC0076B058 /* Supporting Files */,
@@ -110,6 +127,16 @@
 				FA84E8AB1BA628DC0076B058 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAF53AB21BA92AFF004BF6E5 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FAF53AB41BA92B26004BF6E5 /* SWRevealViewController.h */,
+				FAF53AB51BA92B26004BF6E5 /* SWRevealViewController.m */,
+				FAF53AB31BA92B26004BF6E5 /* DEKSTR-Bridging-Header.h */,
+			);
+			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA84E8BD1BA642750076B058 /* UserTableViewController.swift in Sources */,
+				FAF53AB81BA92D78004BF6E5 /* MenuController.swift in Sources */,
 				FA84E8991BA628DC0076B058 /* ViewController.swift in Sources */,
+				FA84E8B71BA62B0D0076B058 /* UserTableViewCell.swift in Sources */,
+				FA84E8BB1BA63BEC0076B058 /* User.swift in Sources */,
 				FA84E8971BA628DC0076B058 /* AppDelegate.swift in Sources */,
+				FAF53AB61BA92B26004BF6E5 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +374,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DEKSTR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DEKSTR/DEKSTR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,9 +387,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DEKSTR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DEKSTR/DEKSTR-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +448,7 @@
 				FA84E8B21BA628DC0076B058 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA84E8B31BA628DC0076B058 /* Build configuration list for PBXNativeTarget "DEKSTRTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +457,7 @@
 				FA84E8B51BA628DC0076B058 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
