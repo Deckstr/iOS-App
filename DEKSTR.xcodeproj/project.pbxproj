@@ -15,9 +15,9 @@
 		FA84E8AD1BA628DC0076B058 /* DEKSTRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84E8AC1BA628DC0076B058 /* DEKSTRTests.swift */; };
 		FA84E8B71BA62B0D0076B058 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84E8B61BA62B0D0076B058 /* UserTableViewCell.swift */; };
 		FA84E8BB1BA63BEC0076B058 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84E8BA1BA63BEC0076B058 /* User.swift */; };
-		FAF53AB61BA92B26004BF6E5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF53AB51BA92B26004BF6E5 /* SWRevealViewController.m */; };
 		FAF53AB81BA92D78004BF6E5 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53AB71BA92D78004BF6E5 /* MenuController.swift */; };
 		FAF53ABA1BA93A25004BF6E5 /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53AB91BA93A25004BF6E5 /* UserTableViewController.swift */; };
+		FAF53ABF1BA93C14004BF6E5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF53ABE1BA93C14004BF6E5 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +43,11 @@
 		FA84E8AC1BA628DC0076B058 /* DEKSTRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DEKSTRTests.swift; sourceTree = "<group>"; };
 		FA84E8B61BA62B0D0076B058 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		FA84E8BA1BA63BEC0076B058 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		FAF53AB41BA92B26004BF6E5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../../../Downloads/SWRevealViewController-master 3/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
-		FAF53AB51BA92B26004BF6E5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../../../Downloads/SWRevealViewController-master 3/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
 		FAF53AB71BA92D78004BF6E5 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		FAF53AB91BA93A25004BF6E5 /* UserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
-		FAF53ABB1BA93AA4004BF6E5 /* DEKSTR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DEKSTR-Bridging-Header.h"; path = "SWRevealViewController/DEKSTR-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAF53ABC1BA93C14004BF6E5 /* DEKSTR-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DEKSTR-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAF53ABD1BA93C14004BF6E5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		FAF53ABE1BA93C14004BF6E5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,9 +132,9 @@
 		FAF53AB21BA92AFF004BF6E5 /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FAF53AB41BA92B26004BF6E5 /* SWRevealViewController.h */,
-				FAF53AB51BA92B26004BF6E5 /* SWRevealViewController.m */,
-				FAF53ABB1BA93AA4004BF6E5 /* DEKSTR-Bridging-Header.h */,
+				FAF53ABC1BA93C14004BF6E5 /* DEKSTR-Bridging-Header.h */,
+				FAF53ABD1BA93C14004BF6E5 /* SWRevealViewController.h */,
+				FAF53ABE1BA93C14004BF6E5 /* SWRevealViewController.m */,
 			);
 			name = SWRevealViewController;
 			sourceTree = "<group>";
@@ -242,10 +242,10 @@
 				FAF53AB81BA92D78004BF6E5 /* MenuController.swift in Sources */,
 				FA84E8991BA628DC0076B058 /* ViewController.swift in Sources */,
 				FA84E8B71BA62B0D0076B058 /* UserTableViewCell.swift in Sources */,
+				FAF53ABF1BA93C14004BF6E5 /* SWRevealViewController.m in Sources */,
 				FA84E8BB1BA63BEC0076B058 /* User.swift in Sources */,
 				FAF53ABA1BA93A25004BF6E5 /* UserTableViewController.swift in Sources */,
 				FA84E8971BA628DC0076B058 /* AppDelegate.swift in Sources */,
-				FAF53AB61BA92B26004BF6E5 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
