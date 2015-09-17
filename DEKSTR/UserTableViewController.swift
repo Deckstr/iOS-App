@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class UserTableViewController: UITableViewController {
     
@@ -18,6 +19,11 @@ class UserTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let testObject = PFObject(className: "TestObject")
+        testObject["foo"] = "bar"
+        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            print("Object has been saved.")
+        }
         
         //Load the sample Data
         loadSampleUsers()
@@ -64,7 +70,7 @@ class UserTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        println(users.count)
+        print(users.count)
         return users.count
     }
     
