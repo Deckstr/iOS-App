@@ -10,18 +10,24 @@ import UIKit
 import Parse
 
 
-class ResetPasswordViewController: UIViewController {
+class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.emailField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     @IBAction func passwordReset(sender: AnyObject) {

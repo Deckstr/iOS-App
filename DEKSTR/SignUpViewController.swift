@@ -10,15 +10,20 @@ import UIKit
 import Parse
 
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var confirmPasswordField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.emailField.delegate = self;
+        self.usernameField.delegate = self;
+        self.passwordField.delegate = self;
+        self.confirmPasswordField.delegate = self;
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,11 +31,21 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false;
+    }
+    
+    @IBAction func termsConditions (sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://www.MonteThakkar.com")!)
+    }
+    
     // MARK: Signup with parse
     @IBAction func signUpAction(sender: AnyObject) {
         
         var username = self.usernameField.text
         var password = self.passwordField.text
+        var confirmPassword = self.confirmPasswordField.text
         var email = self.emailField.text
         var finalEmail = email!.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
         
@@ -41,6 +56,10 @@ class SignUpViewController: UIViewController {
             
         } else if password!.characters.count < 8 {
             var alert = UIAlertView(title: "Invalid", message: "Password must be greater than 8 characters", delegate: self, cancelButtonTitle: "OK")
+            alert.show()
+            
+        } else if password != confirmPassword {
+            var alert = UIAlertView(title: "Invalid", message: "Passwords do not match!", delegate: self, cancelButtonTitle: "OK")
             alert.show()
             
         } else if email!.characters.count < 8 {
