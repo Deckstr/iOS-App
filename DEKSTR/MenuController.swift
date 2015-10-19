@@ -10,16 +10,36 @@ import UIKit
 import Parse
 
 
+extension UIImage {
+    var circle: UIImage {
+        let square = size.width < size.height ? CGSize(width: size.width, height: size.width) : CGSize(width: size.height, height: size.height)
+        let imageView = UIImageView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: square))
+        imageView.contentMode = UIViewContentMode.ScaleAspectFill
+        imageView.image = self
+        imageView.layer.cornerRadius = square.width/2
+        imageView.layer.masksToBounds = true
+        imageView.layer.borderColor = UIColor.whiteColor().CGColor
+        imageView.layer.borderWidth = 3
+        UIGraphicsBeginImageContext(imageView.bounds.size)
+        imageView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let result = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return result
+    }
+}
+
 class MenuController: UITableViewController {
 
     @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var profilePicture: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Show the current visitor's username
         if let pUserName = PFUser.currentUser()?["username"] as? String {
-            self.userNameLabel.text = "@" + pUserName
+            self.userNameLabel.text = pUserName
+            self.profilePicture.image = UIImage(named: "FemaleUserImage")?.circle
         }
     }
     

@@ -12,16 +12,31 @@ import Parse
 class LandingPageViewController: UIViewController {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var designationLabel: UILabel!
+    @IBOutlet weak var profilePicture: UIImageView!
+    @IBOutlet weak var companyNameLabel: UITextField!
+    @IBOutlet weak var phoneNumber: UITextField!
+    @IBOutlet weak var emailLabel: UITextField!
+    @IBOutlet weak var websiteLabel: UITextField!
+    
+    @IBAction func saveButton(sender: UIButton) {
 
+       print("YOYOYO")
+
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = "revealToggle:"
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        // Show the current visitor's username
+        if let pUserName = PFUser.currentUser()?["username"] as? String {
+            self.userNameLabel.text = pUserName
+            self.designationLabel.text = "Software Engineer"
+            self.profilePicture.image = UIImage(named: "FemaleUserImage")?.circle
         }
+
     }
 
     override func viewWillAppear(animated: Bool) {
