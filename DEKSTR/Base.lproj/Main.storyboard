@@ -76,12 +76,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJ4-EO-ofM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="793" y="-341"/>
+            <point key="canvasLocation" x="799" y="-623"/>
         </scene>
-        <!--Landing Page View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="kbH-ND-SX4">
             <objects>
-                <viewController storyboardIdentifier="LandingPage" id="cXS-2y-ZN3" customClass="LandingPageViewController" customModule="DEKSTR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LandingPage" id="cXS-2y-ZN3" customClass="ProfileViewController" customModule="DEKSTR" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jef-Qo-2S6"/>
                         <viewControllerLayoutGuide type="bottom" id="5T3-qf-wNl"/>
@@ -125,11 +125,6 @@
                                         <state key="normal" title="EDIT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="MSb-yv-JxU" kind="popoverPresentation" popoverAnchorView="CDt-Jm-I0X" id="wXZ-af-ArI">
-                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                            </segue>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -260,10 +255,14 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="organize" id="pAK-Xx-fnz"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="companyNameLabel" destination="a9x-OU-GUT" id="qmT-RT-Jar"/>
                         <outlet property="designationLabel" destination="f1G-eW-BWd" id="E16-qU-m2O"/>
-                        <outlet property="menuButton" destination="enC-19-ayU" id="2V1-0Z-Jgn"/>
+                        <outlet property="emailLabel" destination="fRA-si-Ds6" id="mum-Aq-gCD"/>
+                        <outlet property="menuButton" destination="enC-19-ayU" id="cyj-vR-9vc"/>
+                        <outlet property="phoneNumber" destination="q9m-Xd-6r5" id="qSS-v2-hWG"/>
                         <outlet property="profilePicture" destination="0su-tY-NjO" id="don-OE-dVy"/>
                         <outlet property="userNameLabel" destination="D9r-ms-dLm" id="kMm-Gs-PrW"/>
+                        <outlet property="websiteLabel" destination="OaM-Sf-G5S" id="r4R-D5-CHJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VtK-Vo-gYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -287,7 +286,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SS3-ZM-SQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-35" y="-341"/>
+            <point key="canvasLocation" x="-29" y="-623"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="EeC-6V-QVu">
@@ -435,7 +434,7 @@
                                         <animations/>
                                         <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="d4d-78-8ty" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSeguePushController" id="zKn-dA-AER"/>
+                                            <segue destination="d4d-78-8ty" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSeguePushController" id="ofT-fw-nIj"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="VHu-P6-pTd">
@@ -1035,12 +1034,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSF-c5-dGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-35" y="431"/>
+            <point key="canvasLocation" x="-35" y="280"/>
         </scene>
-        <!--Landing Page View Controller-->
+        <!--Profile Edit View Controller-->
         <scene sceneID="siD-vb-pM8">
             <objects>
-                <viewController storyboardIdentifier="EditProfile" id="SYL-7g-R6g" customClass="LandingPageViewController" customModule="DEKSTR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditProfile" id="SYL-7g-R6g" customClass="ProfileEditViewController" customModule="DEKSTR" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RoM-rq-AAs"/>
                         <viewControllerLayoutGuide type="bottom" id="h5l-q0-5hl"/>
@@ -1084,9 +1083,6 @@
                                         <state key="normal" title="SAVE">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <action selector="saveButton:" destination="SYL-7g-R6g" eventType="touchUpInside" id="ur1-yt-qLE"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -1271,6 +1267,6 @@
         <image name="visibility" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zKn-dA-AER"/>
+        <segue reference="ofT-fw-nIj"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -76,7 +76,10 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             newUser.username = username
             newUser.password = password
             newUser.email = finalEmail
-            
+        //    newUser.website = "www.google.com"
+//            newUser.phoneNumber= "111.222.3333"
+//            newUser.companyName = "Facebook"
+//            
             // Sign up the user asynchronously
             newUser.signUpInBackgroundWithBlock({ (succeed, error) -> Void in
                 

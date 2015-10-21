@@ -12,6 +12,7 @@
 		FA57FD111BD246A9002F1687 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA57FD0E1BD246A9002F1687 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
 		FA57FD121BD246A9002F1687 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA57FD0F1BD246A9002F1687 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
 		FA57FD131BD246A9002F1687 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA57FD101BD246A9002F1687 /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
+		FA57FD531BD48EBC002F1687 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA57FD521BD48EBC002F1687 /* ProfileEditViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		FA84E8971BA628DC0076B058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84E8961BA628DC0076B058 /* AppDelegate.swift */; };
 		FA84E8991BA628DC0076B058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84E8981BA628DC0076B058 /* ViewController.swift */; };
 		FA84E89C1BA628DC0076B058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA84E89A1BA628DC0076B058 /* Main.storyboard */; };
@@ -34,7 +35,7 @@
 		FA90E1641BAABE560065E19D /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90E1601BAABE560065E19D /* ResetPasswordViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		FA90E1651BAABE560065E19D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90E1611BAABE560065E19D /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		FA90E1671BAABE7D0065E19D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90E1661BAABE7D0065E19D /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		FA90E1691BAACDDE0065E19D /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90E1681BAACDDE0065E19D /* LandingPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		FA90E1691BAACDDE0065E19D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90E1681BAACDDE0065E19D /* ProfileViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		FA90E16B1BAAD4B70065E19D /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90E16A1BAAD4B70065E19D /* RevealViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		FAF53AB81BA92D78004BF6E5 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53AB71BA92D78004BF6E5 /* MenuController.swift */; };
 		FAF53ABA1BA93A25004BF6E5 /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF53AB91BA93A25004BF6E5 /* UserTableViewController.swift */; };
@@ -57,6 +58,7 @@
 		FA57FD0E1BD246A9002F1687 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		FA57FD0F1BD246A9002F1687 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		FA57FD101BD246A9002F1687 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		FA57FD521BD48EBC002F1687 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		FA84E8911BA628DB0076B058 /* DEKSTR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DEKSTR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA84E8951BA628DC0076B058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA84E8961BA628DC0076B058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +85,7 @@
 		FA90E1601BAABE560065E19D /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		FA90E1611BAABE560065E19D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FA90E1661BAABE7D0065E19D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		FA90E1681BAACDDE0065E19D /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		FA90E1681BAACDDE0065E19D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FA90E16A1BAAD4B70065E19D /* RevealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevealViewController.swift; sourceTree = "<group>"; };
 		FAF53AB71BA92D78004BF6E5 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		FAF53AB91BA93A25004BF6E5 /* UserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
@@ -174,7 +176,8 @@
 				FAF53AB71BA92D78004BF6E5 /* MenuController.swift */,
 				FA84E8981BA628DC0076B058 /* ViewController.swift */,
 				FA84E89A1BA628DC0076B058 /* Main.storyboard */,
-				FA90E1681BAACDDE0065E19D /* LandingPageViewController.swift */,
+				FA57FD521BD48EBC002F1687 /* ProfileEditViewController.swift */,
+				FA90E1681BAACDDE0065E19D /* ProfileViewController.swift */,
 				FA90E16A1BAAD4B70065E19D /* RevealViewController.swift */,
 				FA90E1661BAABE7D0065E19D /* HomeViewController.swift */,
 				FA90E15F1BAABE560065E19D /* LoginViewController.swift */,
@@ -334,7 +337,8 @@
 				FAF53ABF1BA93C14004BF6E5 /* SWRevealViewController.m in Sources */,
 				FA90E1651BAABE560065E19D /* SignUpViewController.swift in Sources */,
 				FA84E8BB1BA63BEC0076B058 /* User.swift in Sources */,
-				FA90E1691BAACDDE0065E19D /* LandingPageViewController.swift in Sources */,
+				FA90E1691BAACDDE0065E19D /* ProfileViewController.swift in Sources */,
+				FA57FD531BD48EBC002F1687 /* ProfileEditViewController.swift in Sources */,
 				FA90E16B1BAAD4B70065E19D /* RevealViewController.swift in Sources */,
 				FA90E1671BAABE7D0065E19D /* HomeViewController.swift in Sources */,
 				FAF53ABA1BA93A25004BF6E5 /* UserTableViewController.swift in Sources */,

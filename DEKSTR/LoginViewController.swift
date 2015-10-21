@@ -71,7 +71,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     })
                     
                 } else {
-                    var alert = UIAlertView(title: "Error", message: "\(error)", delegate: self, cancelButtonTitle: "OK")
+                    var alert = UIAlertView(title: "Error", message: "Username and password do not match!", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
                 }
             })

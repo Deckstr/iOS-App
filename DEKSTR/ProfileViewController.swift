@@ -9,16 +9,18 @@
 import UIKit
 import Parse
 
-class LandingPageViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var designationLabel: UILabel!
     @IBOutlet weak var profilePicture: UIImageView!
-    @IBOutlet weak var companyNameLabel: UITextField!
-    @IBOutlet weak var phoneNumber: UITextField!
-    @IBOutlet weak var emailLabel: UITextField!
-    @IBOutlet weak var websiteLabel: UITextField!
+    @IBOutlet weak var companyNameLabel: UILabel!
+    @IBOutlet weak var phoneNumber: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var websiteLabel: UILabel!
+    
+    
     
     @IBAction func saveButton(sender: UIButton) {
 
@@ -35,7 +37,18 @@ class LandingPageViewController: UIViewController {
             self.userNameLabel.text = pUserName
             self.designationLabel.text = "Software Engineer"
             self.profilePicture.image = UIImage(named: "FemaleUserImage")?.circle
+            self.companyNameLabel.text = "Google Inc"
+            self.phoneNumber.text = "(111)222-3333"
+            self.emailLabel.text = pUserName + "@gmail.com"
+            self.websiteLabel.text = pUserName + "website.com"
         }
+        
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        
 
     }
 
